@@ -70,3 +70,31 @@ pygame.init()
 pygame.mixer.music.load('ex021.mp3')
 pygame.mixer.music.play(loops=0, start=0.0)
 pygame.event.wait()
+
+# Desafio 022
+# Crie um programa que leia o nome completo de uma pessoa e mostre:
+# O nome com todas as letras maiúsculas
+# O nome com todas minúsculas
+# Quantas letras ao todo (sem considerar espaços).
+# Quantas letras tem o primeiro nome.
+print('==============================================================================')
+nome = str(input('Qual o seu nome completo? ')).strip()
+print('Seu nome com todas as letras maiúscula: {}'.format(nome.upper()))
+print('Em minúscula: {}'.format(nome.lower()))
+print('Seu nome tem {} letras'.format(len(nome) - nome.count(' ')))
+primeiro = nome.split()
+print('Seu primerio nome tem {} letras'.format(len(primeiro[0])))
+
+# Desafio 023
+# Faça um programa que leia um numero de 0 a 9999 e mostre na tela cada um dos digitos separados.
+print('==============================================================================')
+numeroqualquer = int(input('Digite um numero de 0 a 9999: '))
+u = numeroqualquer // 1 % 10
+d = numeroqualquer // 10 % 10
+c = numeroqualquer // 100 % 10
+m = numeroqualquer // 1000 % 10
+print('Analisando o numero {}'.format(numeroqualquer))
+print('unidade: {}'.format(u))
+print('dezena: {}'.format(d))
+print('centena: {}'.format(c))
+print('milhar: {}'.format(m))
