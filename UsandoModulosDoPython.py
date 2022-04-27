@@ -111,3 +111,17 @@ print('=========================================================================
 nomesilva = str(input('Qual e seu nome completo? '))
 nomesilva = nomesilva.lower().strip().split()
 print('Seu nome tem silva? {}'.format('silva' in nomesilva))
+
+# Desafio 026
+# Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra "A", em que posição ela aparece a primeira vez e em que posição ela aparece a ultima vez.
+frase = str(input('Escreva uma frase: ')).strip().lower()
+print('Sua frase tem {} letras A'.format(frase.count('a')))
+print('Primeira posicao da letra A: {}'.format(frase.find('a')+1))
+print('Ultima posicao da letra A: {}'.format(frase.rfind('a')+1))
+
+# Desafio 027
+# Faça um programa que leia o nome completo de uma pessoa, mostrando em seguida o primeiro e o ultimo nome separadamente
+nomecomp = str(input('Digite seu nome completo: ')).strip()
+divi = nomecomp.split()
+print('Seu primeiro nome e: {}'.format(divi[0]))
+print('Seu ultimo nome e: {}'.format(divi[len(divi)-1]))
