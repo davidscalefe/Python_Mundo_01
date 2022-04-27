@@ -98,3 +98,16 @@ print('unidade: {}'.format(u))
 print('dezena: {}'.format(d))
 print('centena: {}'.format(c))
 print('milhar: {}'.format(m))
+
+# Desafio 024
+# Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome SANTO.
+print('==============================================================================')
+cidade = str(input('Digite um nome de cidade: ')).strip()
+print(cidade[:5].lower() == 'santo')
+
+# Desafio 025
+# Crie um programa que leia o nome de uma pessoa e diga se ela tem "SILVA"
+print('==============================================================================')
+nomesilva = str(input('Qual e seu nome completo? '))
+nomesilva = nomesilva.lower().strip().split()
+print('Seu nome tem silva? {}'.format('silva' in nomesilva))
