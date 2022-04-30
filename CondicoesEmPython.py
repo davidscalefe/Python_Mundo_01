@@ -28,3 +28,24 @@ elif velocidade < 40:
     print('Voce esta devagar em uma via de 80km!')
 else:
     print('Parabens voce esta na velocidade correta!')
+
+# Desafio 030 
+# Crie um programa que leia um numero inteiro e mostre na tela se ele e PAR ou IMPAR.
+print('==============================================================================')
+parimpar = int(input('Digite um numero: '))
+r = parimpar % 2
+if r == 0:
+    print('Par')
+else:
+    print('Impar')
+
+# Desafio 031
+# Desenvolva um programa que pergunte a distacia de uma viagem em km. Calcule o preço da passagem, cobrando R$0,50 por km para viagens de ate 200km e R$0,45 para viagens mais longas.
+print('==============================================================================')
+distancia = int(input('Qual a distancia da viagem em km? '))
+curta = 0.50
+longa = 0.45
+if distancia <= 200:
+    print('Valor da Passagem: R${}'.format(curta * distancia))
+else:
+    print('Valor da Passagem: R${}'.format(longa * distancia))
