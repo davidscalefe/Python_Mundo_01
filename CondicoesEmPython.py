@@ -49,3 +49,33 @@ if distancia <= 200:
     print('Valor da Passagem: R${}'.format(curta * distancia))
 else:
     print('Valor da Passagem: R${}'.format(longa * distancia))
+
+# Desafio 032
+# Faça um program que leia um ano qualquer e mostre se ele é BISSEXTO.
+print('==============================================================================')
+ano = int(input('Digite um ano qualquer: '))
+bi = ano % 4
+if bi == 0:
+    print('Ano bissexto')
+else:
+    print('Nao e bissexto')
+
+
+# Desafio 033
+# Faça um programa que leia três números e mostre qual é o MAIOR e qual é o MENOR.
+print('==============================================================================')
+n1 = int(input('Digite o primeiro numero: '))
+n2 = int(input('Segundo numero: '))
+n3 = int(input('Terceiro numero: '))
+maior = n1
+menor = n1
+if n2 > maior:
+    maior = n2
+if n3 > maior:
+    maior = n3
+print('O numero maior e {}'.format(maior))
+if n2 < menor:
+    menor = n2
+if n3 < menor:
+    menor = n3
+print('O menor numero e {}'.format(menor))
