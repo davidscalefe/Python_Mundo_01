@@ -79,3 +79,25 @@ if n2 < menor:
 if n3 < menor:
     menor = n3
 print('O menor numero e {}'.format(menor))
+
+# Desafio 034
+# Escreva um programa que pergunte o salario de um funcionario e calcule o valor de seu aumento.
+# Para salários superiores a R$1.250,00, calcule um aumento de 10%.
+# Para os inferiores ou iguais, o aumento é de 15%.
+print('==============================================================================')
+salario = float(input('Qual o seu salario? '))
+base = 1250
+if salario > base:
+    print('Voce ganhou 10% de aumento, seu novo salario R${}'.format(salario + (salario * 10 / 100)))
+else:
+    print('Voce ganhou 15% de aumento, seu novo salario R${}'.format(salario + (salario * 15 / 100)))
+# Desafio 035
+# Desenvolva um programa que leia o comprimento de tres retas e diga ao usuario se elas podem ou nao formar um triangulo.
+print('==============================================================================')
+r1 = float(input('Primeira reta: '))
+r2 = float(input('Segunda reta: '))
+r3 = float(input('Terceira reta: '))
+if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print('Pode formar um triangulo')
+else:
+    print('Não pode formar um triangulo') 
